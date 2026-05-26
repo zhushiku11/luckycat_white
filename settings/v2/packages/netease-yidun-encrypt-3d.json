@@ -1,0 +1,10 @@
+{
+  "__version__": "1.0.4",
+  "config": {
+    "buildDir": "D:\\project\\company1\\MariachiJackpot\\build\\android",
+    "engineDir": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.3",
+    "neteaseKey": "F6z1jgymcBXGFsqk",
+    "excludeExt": ".json;.wav;.mp3;.ttf;.bin;.wasm",
+    "buildTypeSelect": "0"
+  }
+}

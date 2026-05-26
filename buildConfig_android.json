@@ -1,0 +1,102 @@
+{
+  "name": "WatermelonFruitBlitz",
+  "server": "",
+  "platform": "android",
+  "buildPath": "project://build",
+  "debug": false,
+  "md5Cache": false,
+  "skipCompressTexture": false,
+  "sourceMaps": false,
+  "overwriteProjectSettings": {
+    "macroConfig": {
+      "cleanupImageCache": "inherit-project-setting"
+    },
+    "includeModules": {
+      "physics": "inherit-project-setting",
+      "physics-2d": "inherit-project-setting",
+      "gfx-webgl2": "off"
+    }
+  },
+  "nativeCodeBundleMode": "wasm",
+  "polyfills": {
+    "asyncFunctions": false
+  },
+  "experimentalEraseModules": false,
+  "startSceneAssetBundle": false,
+  "bundleConfigs": [],
+  "useBuiltinServer": false,
+  "mainBundleIsRemote": false,
+  "mainBundleCompressionType": "merge_dep",
+  "useSplashScreen": false,
+  "bundleCommonChunk": false,
+  "packAutoAtlas": true,
+  "startScene": "dfe6ed83-583b-44ca-b07b-bbaa6c0f390b",
+  "outputName": "android",
+  "taskName": "android",
+  "scenes": [
+    {
+      "url": "db://assets/main/scene/Loading.scene",
+      "uuid": "dfe6ed83-583b-44ca-b07b-bbaa6c0f390b"
+    },
+    {
+      "url": "db://assets/sub_game0/scene/Game.scene",
+      "uuid": "58eceed4-1563-4b84-9f13-e4eb04d0bdfd"
+    },
+    {
+      "url": "db://assets/sub_game0/scene/Loading.scene",
+      "uuid": "5445f3f8-e991-49eb-83db-4286885885a6"
+    }
+  ],
+  "wasmCompressionMode": false,
+  "packages": {
+    "android": {
+      "packageName": "com.watermelon.fruit.blitz",
+      "resizeableActivity": true,
+      "maxAspectRatio": "2.4",
+      "orientation": {
+        "portrait": true,
+        "upsideDown": false,
+        "landscapeRight": false,
+        "landscapeLeft": false
+      },
+      "apiLevel": 36,
+      "appABIs": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "useDebugKeystore": true,
+      "keystorePath": "",
+      "keystorePassword": "",
+      "keystoreAlias": "",
+      "keystoreAliasPassword": "",
+      "appBundle": false,
+      "androidInstant": false,
+      "inputSDK": false,
+      "remoteUrl": "",
+      "sdkPath": "",
+      "ndkPath": "",
+      "javaHome": "",
+      "javaPath": "",
+      "renderBackEnd": {
+        "vulkan": false,
+        "gles3": true,
+        "gles2": true
+      },
+      "swappy": false,
+      "__version__": "1.0.1"
+    },
+    "native": {
+      "encrypted": true,
+      "xxteaKey": "cfvfNISelPSaksgy",
+      "compressZip": false,
+      "JobSystem": "none",
+      "__version__": "1.0.2"
+    },
+    "cocos-service": {
+      "configID": "4fc2b6",
+      "services": []
+    }
+  },
+  "__version__": "1.3.8",
+  "logDest": "project://temp/builder/log/android2025-10-13 09-49.log"
+}

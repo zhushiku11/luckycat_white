@@ -1,0 +1,28 @@
+{
+  "__version__": "1.0.6",
+  "general": {
+    "designResolution": {
+      "width": 750,
+      "height": 1624
+    },
+    "downloadMaxConcurrency": 20
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "BALL"
+      },
+      {
+        "index": 2,
+        "name": "FLOOR"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 3,
+      "1": 7,
+      "2": 2
+    }
+  },
+  "custom_joint_texture_layouts": []
+}
