@@ -34,7 +34,7 @@ export const langWordsTable: { [key: string]: { [key: string]: string } } = {
         l_aboutTitle: "Paytable",
         l_aboutTips: "can replace any symbol excpt",
         l_START: "START",
-        l_giftBoxTips: "<color=#690000>Collect total 12 <img src='01' height=32 /> will trigger the free game</color>",
+        l_giftBoxTips: "<color=#690000>Collect total 12 <img src='s999' height=32 /> will trigger the free game</color>",
         /** 奖励页 */
         l_cashRewards: "Cash Rewards",
         l_dailyRewards: "Daily Rewards",
@@ -432,7 +432,7 @@ export const langWordsTable: { [key: string]: { [key: string]: string } } = {
         l_aboutTitle: "Tabela de Pagamentos",
         l_aboutTips: "pode substituir qualquer símbolo exceto",
         l_START: "INÍCIO",
-        l_giftBoxTips: "<color=#690000>Colete no total 12 <img src='01' height=32 /> para ativar o jogo grátis</color>",
+        l_giftBoxTips: "<color=#690000>Colete no total 12 <img src='s999' height=32 /> para ativar o jogo grátis</color>",
         /** 奖励页 */
         l_cashRewards: "Recompensas em Dinheiro",
         l_dailyRewards: "Recompensas Diárias",
@@ -648,7 +648,7 @@ export const langWordsTable: { [key: string]: { [key: string]: string } } = {
         l_aboutTitle: "Tabla de pagos",
         l_aboutTips: "puede reemplazar cualquier símbolo excepto",
         l_START: "INICIO",
-        l_giftBoxTips: "<color=#690000>Reúne un total de 12 <img src='01' height=32 /> para activar la partida gratuita</color>",
+        l_giftBoxTips: "<color=#690000>Reúne un total de 12 <img src='s999' height=32 /> para activar la partida gratuita</color>",
         /** 奖励页 */
         l_cashRewards: "Recompensas en efectivo",
         l_dailyRewards: "Recompensas diarias",

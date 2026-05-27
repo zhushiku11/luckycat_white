@@ -138,7 +138,7 @@ export class AnimationSwicth extends Component {
             })
             .delay(200 / speed)
             .call(() => {
-                light0.x = -120;
+                light0.x = -110;
                 tween(light0)
                     .by(50 / speed, { x: 50, alpha: 255 })
                     .by(140 / speed, { x: 140 })

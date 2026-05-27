@@ -191,13 +191,13 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 229,
+      "g": 193,
+      "b": 175,
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "54fee97d-4243-468a-8b4d-13f5d4a7af58@f9941",
+      "__uuid__": "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -272,7 +272,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 730,
+      "y": 730.0000000000001,
       "z": 0
     },
     "_lrot": {
@@ -324,8 +324,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -45,
-      "y": -25,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -402,7 +402,7 @@
       "a": 255
     },
     "_string": "Withdraw",
-    "_horizontalAlign": 0,
+    "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 51,
     "_fontSize": 50,
@@ -510,7 +510,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 220,
-      "y": -25,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -550,8 +550,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 54,
-      "height": 53
+      "width": 55,
+      "height": 55
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -592,7 +592,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -723,7 +723,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 315,
-      "y": -25,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -899,8 +899,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 54,
-      "height": 52
+      "width": 55,
+      "height": 55
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1069,7 +1069,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -315,
-      "y": -25,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -1159,7 +1159,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 33,
+      "width": 28,
       "height": 41
     },
     "_anchorPoint": {
@@ -1674,7 +1674,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 731,
+      "y": 731.0000000000001,
       "z": 0
     },
     "_lrot": {
@@ -1734,7 +1734,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -225,
+      "y": -193,
       "z": 0
     },
     "_lrot": {
@@ -1926,7 +1926,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2077,9 +2077,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 252,
-      "g": 232,
-      "b": 148,
+      "r": 116,
+      "g": 29,
+      "b": 19,
       "a": 255
     },
     "_string": "Cash Balance",
@@ -2341,9 +2341,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 244,
-      "g": 249,
-      "b": 42,
+      "r": 40,
+      "g": 132,
+      "b": 46,
       "a": 255
     },
     "_string": "$0",
@@ -2363,15 +2363,15 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": false,
+    "_enableOutline": true,
     "_outlineColor": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
-    "_outlineWidth": 4,
+    "_outlineWidth": 2,
     "_enableShadow": false,
     "_shadowColor": {
       "__type__": "cc.Color",
@@ -2458,7 +2458,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -96.887,
+      "y": -181.922,
       "z": 0
     },
     "_lrot": {
@@ -2630,8 +2630,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 663,
-      "height": 345
+      "width": 706,
+      "height": 300
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4006,7 +4006,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -77,
+      "y": -82,
       "z": 0
     },
     "_lrot": {
@@ -4228,7 +4228,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": 26,
+      "y": 36.982,
       "z": 0
     },
     "_lrot": {
@@ -4269,7 +4269,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 320,
-      "height": 68.04
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4299,9 +4299,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 244,
-      "g": 249,
-      "b": 42,
+      "r": 40,
+      "g": 132,
+      "b": 46,
       "a": 255
     },
     "_string": "$1000",
@@ -4359,8 +4359,6 @@
       "__id__": 0
     },
     "fileId": "92zCBLVwtF85fj5ZBy2c92",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -4394,7 +4392,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -4797,8 +4795,6 @@
       "__id__": 0
     },
     "fileId": "acwzLW8T1NFaSr+cNy8B35",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -4828,7 +4824,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -165,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -4910,7 +4906,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -4959,8 +4955,6 @@
       "__id__": 0
     },
     "fileId": "ed/EJ8htZOuZ5B0LgyqHq7",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -5261,7 +5255,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -5387,7 +5381,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -55,
+      "y": -44.018,
       "z": 0
     },
     "_lrot": {
@@ -5427,8 +5421,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 386.38671875,
-      "height": 25.2
+      "width": 347.748046875,
+      "height": 22.68
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5458,18 +5452,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 50,
+      "g": 26,
+      "b": 24,
       "a": 255
     },
     "_string": "You need spin 40 times to reach the goal",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 20,
-    "_fontSize": 20,
+    "_actualFontSize": 18,
+    "_fontSize": 18,
     "_fontFamily": "Arial",
-    "_lineHeight": 20,
+    "_lineHeight": 18,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
@@ -5518,8 +5512,6 @@
       "__id__": 0
     },
     "fileId": "5dzBQauGhAGY8PecHEpi6P",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -5677,8 +5669,6 @@
       "__id__": 0
     },
     "fileId": "6ecrlkblhGu7nv5Ha1dtMo",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -5695,8 +5685,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 671,
-      "height": 154
+      "width": 695,
+      "height": 164
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5737,7 +5727,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -5813,7 +5803,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -251,
+      "y": -266,
       "z": 0
     },
     "_lrot": {
@@ -6035,7 +6025,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": 26,
+      "y": 36.982,
       "z": 0
     },
     "_lrot": {
@@ -6106,9 +6096,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 244,
-      "g": 249,
-      "b": 42,
+      "r": 40,
+      "g": 132,
+      "b": 46,
       "a": 255
     },
     "_string": "$1000",
@@ -6201,7 +6191,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -6635,7 +6625,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -165,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -6717,7 +6707,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -7068,7 +7058,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -7194,7 +7184,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -55,
+      "y": -44.018,
       "z": 0
     },
     "_lrot": {
@@ -7234,8 +7224,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 386.38671875,
-      "height": 25.2
+      "width": 347.748046875,
+      "height": 22.68
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7265,18 +7255,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 50,
+      "g": 26,
+      "b": 24,
       "a": 255
     },
     "_string": "You need spin 40 times to reach the goal",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 20,
-    "_fontSize": 20,
+    "_actualFontSize": 18,
+    "_fontSize": 18,
     "_fontFamily": "Arial",
-    "_lineHeight": 20,
+    "_lineHeight": 18,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
@@ -7502,8 +7492,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 671,
-      "height": 154
+      "width": 695,
+      "height": 164
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7544,7 +7534,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 2,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -7570,8 +7560,6 @@
       "__id__": 0
     },
     "fileId": "6c6ONRO+1AzrUYcKRN9J/C",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -7620,7 +7608,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -425,
+      "y": -450,
       "z": 0
     },
     "_lrot": {
@@ -7842,7 +7830,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": 26,
+      "y": 36.982,
       "z": 0
     },
     "_lrot": {
@@ -7913,9 +7901,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 244,
-      "g": 249,
-      "b": 42,
+      "r": 40,
+      "g": 132,
+      "b": 46,
       "a": 255
     },
     "_string": "$1000",
@@ -8008,7 +7996,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -8442,7 +8430,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -165,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -8524,7 +8512,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -8875,7 +8863,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -9001,7 +8989,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -55,
+      "y": -44.018,
       "z": 0
     },
     "_lrot": {
@@ -9041,8 +9029,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 386.38671875,
-      "height": 25.2
+      "width": 347.748046875,
+      "height": 22.68
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -9072,18 +9060,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 50,
+      "g": 26,
+      "b": 24,
       "a": 255
     },
     "_string": "You need spin 40 times to reach the goal",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 20,
-    "_fontSize": 20,
+    "_actualFontSize": 18,
+    "_fontSize": 18,
     "_fontFamily": "Arial",
-    "_lineHeight": 20,
+    "_lineHeight": 18,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
@@ -9309,8 +9297,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 671,
-      "height": 154
+      "width": 695,
+      "height": 164
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -9427,7 +9415,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -599,
+      "y": -634,
       "z": 0
     },
     "_lrot": {
@@ -9649,7 +9637,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": 26,
+      "y": 36.982,
       "z": 0
     },
     "_lrot": {
@@ -9720,9 +9708,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 244,
-      "g": 249,
-      "b": 42,
+      "r": 40,
+      "g": 132,
+      "b": 46,
       "a": 255
     },
     "_string": "$1000",
@@ -9815,7 +9803,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -10249,7 +10237,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -165,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -10331,7 +10319,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -10682,7 +10670,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -10808,7 +10796,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -55,
+      "y": -44.018,
       "z": 0
     },
     "_lrot": {
@@ -10848,8 +10836,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 386.38671875,
-      "height": 25.2
+      "width": 347.748046875,
+      "height": 22.68
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -10879,18 +10867,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 50,
+      "g": 26,
+      "b": 24,
       "a": 255
     },
     "_string": "You need spin 40 times to reach the goal",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 20,
-    "_fontSize": 20,
+    "_actualFontSize": 18,
+    "_fontSize": 18,
     "_fontFamily": "Arial",
-    "_lineHeight": 20,
+    "_lineHeight": 18,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
@@ -11116,8 +11104,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 671,
-      "height": 154
+      "width": 695,
+      "height": 164
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -11234,7 +11222,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -773,
+      "y": -818,
       "z": 0
     },
     "_lrot": {
@@ -11456,7 +11444,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": 26,
+      "y": 36.982,
       "z": 0
     },
     "_lrot": {
@@ -11527,9 +11515,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 244,
-      "g": 249,
-      "b": 42,
+      "r": 40,
+      "g": 132,
+      "b": 46,
       "a": 255
     },
     "_string": "$1000",
@@ -11622,7 +11610,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -12056,7 +12044,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -165,
-      "y": -20,
+      "y": -9.018,
       "z": 0
     },
     "_lrot": {
@@ -12138,7 +12126,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -12489,7 +12477,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -12615,7 +12603,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -30,
-      "y": -55,
+      "y": -44.018,
       "z": 0
     },
     "_lrot": {
@@ -12655,8 +12643,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 386.38671875,
-      "height": 25.2
+      "width": 347.748046875,
+      "height": 22.68
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -12686,18 +12674,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 50,
+      "g": 26,
+      "b": 24,
       "a": 255
     },
     "_string": "You need spin 40 times to reach the goal",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 20,
-    "_fontSize": 20,
+    "_actualFontSize": 18,
+    "_fontSize": 18,
     "_fontFamily": "Arial",
-    "_lineHeight": 20,
+    "_lineHeight": 18,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
@@ -12923,8 +12911,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 671,
-      "height": 154
+      "width": 695,
+      "height": 164
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -13010,7 +12998,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 671,
-      "height": 850
+      "height": 900
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -13166,7 +13154,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 750,
-      "height": 1462
+      "height": 1462.0000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -13311,7 +13299,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 750,
-      "height": 1462
+      "height": 1462.0000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -13419,7 +13407,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 750,
-      "height": 1462
+      "height": 1462.0000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -13515,7 +13503,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 750,
-      "height": 1624
+      "height": 1624.0000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
