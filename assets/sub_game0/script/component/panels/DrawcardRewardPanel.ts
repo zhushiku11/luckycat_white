@@ -1,4 +1,4 @@
-import { _decorator, Button, Component, find, Label, Node, RichText, sp, Sprite, SpriteFrame, tween } from 'cc';
+import { _decorator, Button, Component, find, Label, Node, RichText, sp, Sprite, SpriteFrame, tween, Vec3 } from 'cc';
 import { CurrencyType, Language } from 'db://assets/doge/framework/language/Language';
 import { UserSystem } from '../../system/UserSystem';
 import { AMoney, BMoney } from 'db://assets/doge/framework/common/Currency';
@@ -33,8 +33,9 @@ export class DrawcardRewardPanel extends Component implements IPanel {
     @property(Node)
     private closeBtn: Node = null;
     @property(Node)
+    private light: Node = null;
+    @property(Node)
     private claimBtn: Node = null;
-
     private lock: boolean = false;
 
     private _reward: number = 0;
@@ -57,7 +58,7 @@ export class DrawcardRewardPanel extends Component implements IPanel {
     onInit(type: number, rewardA: number) {
         this.reward = rewardA;
 
-        this.fireworks.active = true;
+        this.fireworks.active = false;
 
         this.reward = rewardA;
         tween<DrawcardRewardPanel>(this)
@@ -69,7 +70,7 @@ export class DrawcardRewardPanel extends Component implements IPanel {
             .start();
 
         this.amount.getComponent(SpriteSwitcher).index(type);
-        Language.getImage(`drawcard_title${type}_big`, RES_NAME).then((spf: SpriteFrame) => {
+        Language.getImage(`drawcard_title${type}`, RES_NAME).then((spf: SpriteFrame) => {
             this.amount.getComponentInChildren(Sprite).spriteFrame = spf;
         })
 

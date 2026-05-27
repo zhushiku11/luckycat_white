@@ -52,10 +52,10 @@ export class TreasurePanel extends Component implements IPanel {
         }).start();
 
         let spine = this.animation.getComponent(sp.Skeleton);
-        spine.setAnimation(0, "start_in", false);
+        // spine.setAnimation(0, "start_in", false);
         spine.setCompleteListener(() => {
-            spine.setAnimation(0, "start_idle", true);
-            spine.setCompleteListener(null);
+            // spine.setAnimation(0, "start_idle", true);
+            // spine.setCompleteListener(null);
 
             // let btnSp = this.startBtn.getComponent(sp.Skeleton);
             // btnSp.setToSetupPose();
@@ -65,10 +65,10 @@ export class TreasurePanel extends Component implements IPanel {
             //     btnSp.setAnimation(0, "button_idle", false);
             //     btnSp.setCompleteListener(null);
             // })
-            tween(this.startBtn)
-                .to(0.4, { scales: 1.0 }, { easing: easing.backOut })
-                .start();
         })
+        tween(this.startBtn)
+            .to(0.4, { scales: 1.0 }, { easing: easing.backOut })
+            .start();
     };
 
     onStartClick() {
