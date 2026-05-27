@@ -17,6 +17,8 @@ export enum SymbolType {
     S6 = 6,
     S7 = 7,
     S8 = 8,
+    S9 = 9,
+    S10 = 10,
     STreasure = 999,
     SUniversal = 1000,
     None = 99999
@@ -39,6 +41,8 @@ const ANIMS_OFFSET = {
     "6": [0, 0],
     "7": [0, 0],
     "8": [0, 0],
+    "9": [0, 0],
+    "10": [0, 0],
     "999": [0, 0],
     "1000": [0, 0],
 }
@@ -56,6 +60,8 @@ export class GameSymbol extends Component {
         SymbolType.S6,
         SymbolType.S7,
         SymbolType.S8,
+        SymbolType.S9,
+        SymbolType.S10,
         SymbolType.STreasure,
         SymbolType.SUniversal,
     ];
@@ -88,7 +94,7 @@ export class GameSymbol extends Component {
     }
 
     protected start(): void {
-        console.log(this.getNormalSymbolModel(SymbolType.S0).name);
+        // console.log(this.getNormalSymbolModel(SymbolType.S0).name);
     }
 
     init(type: SymbolType, state: SymbolState) {
@@ -187,98 +193,88 @@ export class GameSymbol extends Component {
 
         let img = find("Img", this.icon);
         let model = find("Model", this.icon);
-        if (this.isSpecialSymbol()) {
-            img.active = false;
-            model.active = true;
-            let spine = model.getComponent(sp.Skeleton);
-            Utils.resetSkeletonData(spine, this.getSpecialSymbolModel(this.symbolType));
-            this.scheduleOnce(() => {
-                spine.setAnimation(0, "idle", true);
-            }, 0);
-        } else {
-            img.active = true;
-            model.active = false;
-            img.getComponent(Sprite).spriteFrame = AssetsDB.get<SpriteFrame>(PRELOAD.SPFRAME_FRAMES.COMMON[`s${this.symbolType}`], RES_NAME);
-        }
+        
+        img.active = true;
+        model.active = false;
+        
+        // 重置缩放，确保所有符号大小一致
+        img.scale = v3(1, 1, 1);
+        
+        // 获取Sprite组件并设置尺寸模式为原始尺寸
+        let sprite = img.getComponent(Sprite);
+        sprite.sizeMode = Sprite.SizeMode.TRIMMED;
+        
+        // 使用静态图片显示，特殊符号也使用静态图片
+        sprite.spriteFrame = AssetsDB.get<SpriteFrame>(PRELOAD.SPFRAME_FRAMES.COMMON[`s${this.symbolType}`], RES_NAME);
 
         this.changeStateEnd && this.changeStateEnd(this.symbolState);
     }
 
     _toStateWinIdle() {
-        this.icon.active = false;
-        this.animation.active = true;
+        this.icon.active = true;
+        this.animation.active = false;
         this.blur.active = false;
         this.frame.node.active = false;
 
-        let anims = find("Anims0", this.animation);
-        let animsSpine = anims.getComponent(sp.Skeleton)
-        // let specialAnims = find("Anims1", this.animation);
-        if (this.isSpecialSymbol()) {
-            anims.scales = 0.35;
-            Utils.resetSkeletonData(animsSpine, this.getSpecialSymbolModel(this.symbolType));
-            animsSpine.premultipliedAlpha = false;
-            this.scheduleOnce(() => {
-                animsSpine.setAnimation(0, "win", true);
-            }, 0);
-        } else {
-            anims.scales = 1;
-            Utils.resetSkeletonData(animsSpine, this.getNormalSymbolModel(this.symbolType));
-            animsSpine.premultipliedAlpha = false;
-            this.scheduleOnce(() => {
-                animsSpine.setAnimation(0, `${animsSpine.skeletonData.name}_win`, true);
-            }, 0);
-        }
-        anims.position = v3(ANIMS_OFFSET[this.symbolType][0], ANIMS_OFFSET[this.symbolType][1], 0);
-        tween(this.frame.node).delay(1.7).call(() => {
-            this._toStateIdle();
-        }).start();
+        let img = find("Img", this.icon);
+        img.active = true;
+        
+        // 重置缩放，确保所有符号大小一致
+        img.scale = v3(1, 1, 1);
+        
+        // 获取Sprite组件并设置尺寸模式为原始尺寸
+        let sprite = img.getComponent(Sprite);
+        sprite.sizeMode = Sprite.SizeMode.TRIMMED;
+        
+        // 使用静态图片显示中奖状态
+        sprite.spriteFrame = AssetsDB.get<SpriteFrame>(PRELOAD.SPFRAME_FRAMES.COMMON[`s${this.symbolType}`], RES_NAME);
+
+        // 简单的缩放动画效果
+        tween(img)
+            .repeat(3, tween(img).to(0.15, { scale: v3(1.1, 1.1, 1) }).to(0.15, { scale: v3(1, 1, 1) }))
+            .delay(1.7)
+            .call(() => {
+                this._toStateIdle();
+            })
+            .start();
     }
 
     _toStateWin() {
-        this.icon.active = false;
-        this.animation.active = true;
+        this.icon.active = true;
+        this.animation.active = false;
         this.blur.active = false;
         this.frame.node.active = true;
 
-        let anims = find("Anims0", this.animation);
-        let animsSpine = anims.getComponent(sp.Skeleton)
-        // let specialAnims = find("Anims1", this.animation);
-        if (this.isSpecialSymbol()) {
-            anims.scales = 0.35;
-            Utils.resetSkeletonData(animsSpine, this.getSpecialSymbolModel(this.symbolType));
-            animsSpine.premultipliedAlpha = false;
-            this.scheduleOnce(() => {
-                animsSpine.setAnimation(0, "win", false);
-            }, 0);
+        let img = find("Img", this.icon);
+        img.active = true;
+        
+        // 重置缩放，确保所有符号大小一致
+        img.scale = v3(1, 1, 1);
+        
+        // 获取Sprite组件并设置尺寸模式为原始尺寸
+        let sprite = img.getComponent(Sprite);
+        sprite.sizeMode = Sprite.SizeMode.TRIMMED;
+        
+        // 使用静态图片显示中奖状态
+        sprite.spriteFrame = AssetsDB.get<SpriteFrame>(PRELOAD.SPFRAME_FRAMES.COMMON[`s${this.symbolType}`], RES_NAME);
 
-        } else {
-            anims.scales = 1;
-            Utils.resetSkeletonData(animsSpine, this.getNormalSymbolModel(this.symbolType));
-            animsSpine.premultipliedAlpha = false;
-            this.scheduleOnce(() => {
-                animsSpine.setAnimation(0, `${animsSpine.skeletonData.name}_win`, false);
-            }, 0);
-        }
-        anims.position = v3(ANIMS_OFFSET[this.symbolType][0], ANIMS_OFFSET[this.symbolType][1], 0);
+        // 播放外框动画
         this.frame.setToSetupPose();
-        this.frame.setAnimation(0, "animation", false);
+        this.frame.setAnimation(0, "lizi", false);
+
+        // 延迟播放爆炸特效
         tween(this.frame.node).delay(0.6).call(() => {
             this.boom.node.active = true;
             this.boom.setToSetupPose();
             this.boom.setAnimation(0, "animation", false);
-            console.log("boom fire");
 
-            this.animation.fadeOut(0.1, 0, () => { console.log("icon fadeout"); });
             this.boom.setCompleteListener(() => {
                 this.boom.setCompleteListener(null);
-                // EventCenter.getInstance().fire(GameEvent.game_axis_roll_move_ele, this.parentCom.idx, this);
-                this.animation.alpha = 255;
-                this.animation.active = false;
                 this.boom.node.active = false;
                 this.frame.node.active = false;
                 this.changeStateEnd && this.changeStateEnd(this.symbolState);
             });
-        }).start()
+        }).start();
     }
 
     _toStateBlur() {

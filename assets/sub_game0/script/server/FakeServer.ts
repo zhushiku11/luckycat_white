@@ -31,6 +31,8 @@ enum SymbolType {
     S6 = 6,
     S7 = 7,
     S8 = 8,
+    S9 = 9,
+    S10 = 10,
     STreasure = 999,
     SUniversal = 1000,
     None = 99999
@@ -53,13 +55,25 @@ const ALL_TYPE: SymbolType[] = [
     SymbolType.S6,
     SymbolType.S7,
     SymbolType.S8,
+    SymbolType.S9,
+    SymbolType.S10,
     // SymbolType.SWild,
     // SymbolType.SUniversal,
 ];
 const LINE_SIZE = 4;
-const COL_SIZE = 5;
+const COL_SIZE = 6;
 
 const OddsTable = {
+    "10": {
+        "5": 15,
+        "4": 10,
+        "3": 9,
+    },
+    "9": {
+        "5": 5,
+        "4": 2,
+        "3": 1,
+    },
     "8": {
         "5": 6,
         "4": 3,
@@ -118,6 +132,7 @@ export class FakeServer {
                 "2": [1000, 2, 6, 1000, 7],
                 "3": [4, 1, 999, 0, 1],
                 "4": [3, 7, 6, 2, 8],
+                "5": [3, 7, 0, 8, 9],
             },
         }
     }
@@ -130,6 +145,7 @@ export class FakeServer {
                 "2": [],
                 "3": [],
                 "4": [],
+                "5": [],
             },
             result: [],
             reward: 0,
@@ -260,6 +276,11 @@ export class FakeServer {
 
         // 多添加一行(缓冲行)
         symbolMap.push([
+            {
+                symbolType: -1,
+                symbolNum: 1,
+                isCash: false,
+            },
             {
                 symbolType: -1,
                 symbolNum: 1,

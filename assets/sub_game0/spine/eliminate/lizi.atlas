@@ -1,0 +1,90 @@
+
+lizi.png
+size: 614,765
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a1
+  rotate: false
+  xy: 2, 539
+  size: 224, 224
+  orig: 224, 224
+  offset: 0, 0
+  index: -1
+a2
+  rotate: false
+  xy: 228, 539
+  size: 224, 224
+  orig: 224, 224
+  offset: 0, 0
+  index: -1
+a3
+  rotate: false
+  xy: 2, 313
+  size: 224, 224
+  orig: 224, 224
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_01
+  rotate: false
+  xy: 2, 11
+  size: 137, 128
+  orig: 137, 128
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_03
+  rotate: false
+  xy: 454, 450
+  size: 157, 149
+  orig: 157, 149
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_04
+  rotate: true
+  xy: 454, 601
+  size: 162, 155
+  orig: 162, 155
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_05
+  rotate: false
+  xy: 181, 2
+  size: 167, 160
+  orig: 167, 160
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_06
+  rotate: false
+  xy: 2, 141
+  size: 177, 170
+  orig: 177, 170
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_07
+  rotate: false
+  xy: 415, 87
+  size: 182, 174
+  orig: 182, 174
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_08
+  rotate: false
+  xy: 228, 164
+  size: 185, 182
+  orig: 185, 182
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_09
+  rotate: false
+  xy: 423, 263
+  size: 189, 185
+  orig: 189, 185
+  offset: 0, 0
+  index: -1
+ps_vfx_b_add_10
+  rotate: false
+  xy: 228, 348
+  size: 193, 189
+  orig: 193, 189
+  offset: 0, 0
+  index: -1

@@ -20,9 +20,9 @@ import { UploadSystem } from "../system/UploadSystem";
 import { Clock } from "db://assets/doge/framework/common/Clock";
 const { ccclass, property } = _decorator;
 
-const COL_SIZE = 5;
+const COL_SIZE = 6;
 const LINE_SIZE = 5;
-const ROLL_SPEED = 4200;
+const ROLL_SPEED = 2600;
 // const ROLL_SPEED = 360;
 
 
@@ -627,7 +627,7 @@ export class GameLogic extends Component {
 
 class SlotsContent {
 
-    private readonly COL_SIZE: number = 5;
+    private readonly COL_SIZE: number = 6;
 
     private list: GameSymbol[][] = null;
 
