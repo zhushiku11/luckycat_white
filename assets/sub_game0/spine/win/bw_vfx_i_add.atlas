@@ -1,0 +1,13 @@
+
+bw_vfx_i_add.png
+size: 24,29
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bw_vfx_i_add_0
+  rotate: false
+  xy: 2, 2
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1

@@ -845,9 +845,16 @@ export const langImagesTable: { [key: string]: { [key: string]: string } } = {
         drawcard_title0_big: "texture/common/drawcard_title0_en_big/spriteFrame",
         drawcard_title1_big: "texture/common/drawcard_title1_en_big/spriteFrame",
         drawcard_title2_big: "texture/common/drawcard_title2_en_big/spriteFrame",
+        // ui_big_win: "texture/common/ui_big_win_us/spriteFrame",
+        // ui_mega_win: "texture/common/ui_mega_win_us/spriteFrame",
+        // ui_super_mega_win_us: "texture/common/ui_super_mega_win_us/spriteFrame",
     },
     // 印尼语
-    ID: {},
+    ID: {
+        // ui_big_win: "texture/common/ui_big_win_id/spriteFrame",
+        // ui_mega_win: "texture/common/ui_mega_win_id/spriteFrame",
+        // ui_super_mega_win_id: "texture/common/ui_super_mega_win_id/spriteFrame",
+    },
     // 巴西葡萄牙语
     PT: {
         drawcard_title0: "texture/common/drawcard_title0_pt/spriteFrame",
@@ -856,6 +863,9 @@ export const langImagesTable: { [key: string]: { [key: string]: string } } = {
         drawcard_title0_big: "texture/common/drawcard_title0_pt_big/spriteFrame",
         drawcard_title1_big: "texture/common/drawcard_title1_pt_big/spriteFrame",
         drawcard_title2_big: "texture/common/drawcard_title2_pt_big/spriteFrame",
+        // ui_big_win: "texture/common/ui_big_win_br/spriteFrame",
+        // ui_mega_win: "texture/common/ui_mega_win_br/spriteFrame",
+        // ui_super_mega_win: "texture/common/ui_super_mega_win_br/spriteFrame",
     },
     // 俄语
     RU: {},

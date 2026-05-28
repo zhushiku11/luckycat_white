@@ -15,15 +15,12 @@ const { ccclass, property } = _decorator;
 
 @ccclass('TreasurePanel')
 export class TreasurePanel extends Component implements IPanel {
-
     @property(Node)
     private bg: Node = null;
     @property(Node)
-    private animation: Node = null;
-    @property(Node)
     private num: Node = null;
     @property(Node)
-    private getFree: Node = null;
+    private getFreeUi: Node = null;
     @property(Node)
     private startBtn: Node = null;
 
@@ -51,21 +48,19 @@ export class TreasurePanel extends Component implements IPanel {
             }).start();
         }).start();
 
-        let spine = this.animation.getComponent(sp.Skeleton);
-        // spine.setAnimation(0, "start_in", false);
-        spine.setCompleteListener(() => {
-            // spine.setAnimation(0, "start_idle", true);
-            // spine.setCompleteListener(null);
+        //
+        switch (Language.currency) {
+            case CurrencyType.US:
+                this.getFreeUi.getComponent(SpriteSwitcher).index(0);
+                break;
+            case CurrencyType.BR:
+                this.getFreeUi.getComponent(SpriteSwitcher).index(1);
+                break;
+            case CurrencyType.ID:
+                this.getFreeUi.getComponent(SpriteSwitcher).index(2);
+                break;
+        }
 
-            // let btnSp = this.startBtn.getComponent(sp.Skeleton);
-            // btnSp.setToSetupPose();
-            // btnSp.setAnimation(0, "button_in", false);
-            // this.startBtn.scales = 1;
-            // btnSp.setCompleteListener(() => {
-            //     btnSp.setAnimation(0, "button_idle", false);
-            //     btnSp.setCompleteListener(null);
-            // })
-        })
         tween(this.startBtn)
             .to(0.4, { scales: 1.0 }, { easing: easing.backOut })
             .start();

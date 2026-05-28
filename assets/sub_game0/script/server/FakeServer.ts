@@ -196,13 +196,13 @@ export class FakeServer {
         let jackpot = 0;
         if (AMoney.value() >= -99999 && AMoney.value() < 500) {
             jackpot = FakeServer.getByProbability([0, 1], [0.6, 0.4]);
-            // jackpot = FakeServer.getByProbability([0, 1], [0, 1]);
+            // jackpot = FakeServer.getByProbability([0, 1], [0, 2]);
         } else if (AMoney.value() >= 500 && AMoney.value() < 1000) {
             jackpot = FakeServer.getByProbability([0, 1], [0.7, 0.3]);
-            // jackpot = FakeServer.getByProbability([0, 1], [0, 1]);
+            // jackpot = FakeServer.getByProbability([0, 1], [0, 2]);
         } else if (AMoney.value() >= 1000 && AMoney.value() < 99999999) {
             jackpot = FakeServer.getByProbability([0, 1], [1, 0]);
-            // jackpot = FakeServer.getByProbability([0, 1], [0, 1]);
+            // jackpot = FakeServer.getByProbability([0, 1], [0, 2]);
         }
 
         // cash奖励数量

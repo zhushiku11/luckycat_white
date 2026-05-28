@@ -20,7 +20,7 @@ export class TreasureWinPanel extends Component implements IPanel {
     @property(Node)
     private animation: Node = null;
     @property(Node)
-    private light: Node = null;
+    private TotalTitleSp: Node = null;
     @property(Node)
     private tips: Node = null;
     @property(Node)
@@ -65,7 +65,20 @@ export class TreasureWinPanel extends Component implements IPanel {
         // spS.setAnimation(0, "end_idle", true);
 
         this.setAmount(0);
+        //
+        switch (Language.currency) {
+            case CurrencyType.US:
+                this.TotalTitleSp.getComponent(SpriteSwitcher).index(0);
+                break;
+            case CurrencyType.BR:
+                this.TotalTitleSp.getComponent(SpriteSwitcher).index(1);
+                break;
+            case CurrencyType.ID:
+                this.TotalTitleSp.getComponent(SpriteSwitcher).index(2);
+                break;
+        }
 
+        
         tween(this.animation).to(0.5, { alpha: 255 }).call(() => {
             tween(this.tips).to(0.2, { scales: 1 }).start();
             tween<TreasureWinPanel>(this)

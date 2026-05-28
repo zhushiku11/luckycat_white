@@ -56,6 +56,9 @@ export const PRELOAD = {
             tip_icon4: 'texture/common/tip_icon4_id/spriteFrame',
             tip_icon5: 'texture/common/tip_icon5_id/spriteFrame',
             taskIcon: 'texture/common/task_icon_id/spriteFrame',
+            // ui_big_win: "texture/common/ui_big_win_id/spriteFrame",
+            // ui_mega_win: "texture/common/ui_mega_win_id/spriteFrame",
+            // ui_super_mega_win_id: "texture/common/ui_super_mega_win_id/spriteFrame",
         },
         BR: {
             reward_icon0: 'texture/common/reward_icon0_br/spriteFrame',
@@ -86,6 +89,9 @@ export const PRELOAD = {
             tip_icon4: 'texture/common/tip_icon4_us/spriteFrame',
             tip_icon5: 'texture/common/tip_icon5_us/spriteFrame',
             taskIcon: 'texture/common/task_icon_us/spriteFrame',
+            // ui_big_win: "texture/common/ui_big_win_us/spriteFrame",
+            // ui_mega_win: "texture/common/ui_mega_win_us/spriteFrame",
+            // ui_super_mega_win_us: "texture/common/ui_super_mega_win_us/spriteFrame",
         },
 
         EN: {
@@ -95,6 +101,9 @@ export const PRELOAD = {
             drawcard_title0_big: "texture/common/drawcard_title0_en_big/spriteFrame",
             drawcard_title1_big: "texture/common/drawcard_title1_en_big/spriteFrame",
             drawcard_title2_big: "texture/common/drawcard_title2_en_big/spriteFrame",
+            // ui_big_win: "texture/common/ui_big_win_en/spriteFrame",
+            // ui_mega_win: "texture/common/ui_mega_win_en/spriteFrame",
+            // ui_super_mega_win: "texture/common/ui_super_mega_win_br/spriteFrame",
         },
 
         PT: {
@@ -104,6 +113,9 @@ export const PRELOAD = {
             drawcard_title0_big: "texture/common/drawcard_title0_pt_big/spriteFrame",
             drawcard_title1_big: "texture/common/drawcard_title1_pt_big/spriteFrame",
             drawcard_title2_big: "texture/common/drawcard_title2_pt_big/spriteFrame",
+            // ui_big_win: "texture/common/ui_big_win_pt/spriteFrame",
+            // ui_mega_win: "texture/common/ui_mega_win_pt/spriteFrame",
+            // ui_super_mega_win: "texture/common/ui_super_mega_win_br/spriteFrame",
         },
 
     },

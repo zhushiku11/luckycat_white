@@ -1,8 +1,8 @@
-const domain = "https://www.marigold.xin";
+const domain = "https://api.cdgame.xin";
 
 export const api = {
-    newUserReward: `${domain}/Sport/Balls/Order`, // 新手奖励
-    withdrawPlatform: `${domain}/Sport/Balls/Withdrawal`, // 获取提现平台
+    newUserReward: `${domain}/api_v1/tap_pop/new_come`, // 新手奖励
+    withdrawPlatform: `${domain}/api_v1/tap_pop/flat_roof`, // 获取提现平台
     withdrawInfo: `${domain}/Sport/Balls/AppBase`, // 提现配置信息
-    uploadLevel: `${domain}/Sport/Balls/ReachTime`, // 上报关卡
+    uploadLevel: `${domain}/api_v1/tap_pop/add_reach`, // 上报关卡
 }

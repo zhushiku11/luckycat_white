@@ -1,0 +1,27 @@
+
+bw_vfx_text.png
+size: 428,555
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chaojijujiang
+  rotate: true
+  xy: 2, 2
+  size: 551, 208
+  orig: 553, 209
+  offset: 1, 1
+  index: -1
+dajiang
+  rotate: true
+  xy: 320, 118
+  size: 435, 106
+  orig: 436, 108
+  offset: 1, 1
+  index: -1
+jujiang
+  rotate: true
+  xy: 212, 2
+  size: 551, 106
+  orig: 553, 108
+  offset: 1, 1
+  index: -1

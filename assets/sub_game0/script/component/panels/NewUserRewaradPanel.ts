@@ -14,6 +14,8 @@ export class NewUserRewaradPanel extends Component implements IPanel {
     @property(Node)
     private animation: Node = null;
     @property(Node)
+    private goldanimation: Node = null;
+    @property(Node)
     private title: Node = null;
     @property(Node)
     private light: Node = null;
@@ -57,19 +59,30 @@ export class NewUserRewaradPanel extends Component implements IPanel {
         let spine = this.animation.getComponent(sp.Skeleton);
         spine.setToSetupPose();
         if (rewardA < 10) {
-            spine.setAnimation(0, "win_big_in2", false);
+            spine.setAnimation(0, "win_vfx_bigwin", false);
             this.title.getComponent(Label).string = Language.getWord("l_bigRewards");
         } else if (rewardA < 20) {
-            spine.setAnimation(0, "win_huge_in2", false);
+            spine.setAnimation(0, "win_vfx_megawin", false);
             this.title.getComponent(Label).string = Language.getWord("l_greatRewards");
         } else {
-            spine.setAnimation(0, "win_super_in2", false);
+            spine.setAnimation(0, "win_vfx_supermegawin", false);
             this.title.getComponent(Label).string = Language.getWord("l_superRewards");
         }
 
-        this.light.active = true;
-        this.light.getComponent(sp.Skeleton).setAnimation(0, "animation", false);
-        this.fireworks.active = true;
+        // goldanimation 动画播放完后自动关闭
+        if (this.goldanimation) {
+            let goldSpine = this.goldanimation.getComponent(sp.Skeleton);
+            goldSpine.setToSetupPose();
+            goldSpine.setCompleteListener(() => {
+                this.goldanimation.active = false;
+                goldSpine.setCompleteListener(null);
+            });
+            goldSpine.setAnimation(0, "animation", false);
+        }
+
+        // this.light.active = true;   130  110   -55
+        // this.light.getComponent(sp.Skeleton).setAnimation(0, "animation", false);
+        this.fireworks.active = false;
 
         tween<NewUserRewaradPanel>(this)
             .to(0.8, { reward: rewardA })

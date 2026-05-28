@@ -24,7 +24,13 @@ export class NormalRewardPanel extends Component implements IPanel {
     @property(Node)
     private animation: Node = null;
     @property(Node)
-    private title: Node = null;
+    private goldanimation: Node = null;
+    @property(Node)
+    private WinUititle: Node = null;
+    @property(Node)
+    private MegaUititle: Node = null;
+    @property(Node)
+    private SuperUititle: Node = null;
     @property(Node)
     private light: Node = null;
     @property(Node)
@@ -66,19 +72,61 @@ export class NormalRewardPanel extends Component implements IPanel {
         let spine = this.animation.getComponent(sp.Skeleton);
         spine.setToSetupPose();
         if (rewardA < 10) {
-            spine.setAnimation(0, "win_big_in2", false);
-            this.title.getComponent(Label).string = Language.getWord("l_bigRewards");
+            this.WinUititle.active = true;
+            this.MegaUititle.active = false;
+            this.SuperUititle.active = false;
+            spine.setAnimation(0, "win_vfx_bigwin", false);
+            this.light.getComponent(sp.Skeleton).setAnimation(0, "animation", false);
+            // this.title.getComponent(Label).string = Language.getWord("l_bigRewards");
         } else if (rewardA < 20) {
-            spine.setAnimation(0, "win_huge_in2", false);
-            this.title.getComponent(Label).string = Language.getWord("l_greatRewards");
+            this.WinUititle.active = false;
+            this.MegaUititle.active = true;
+            this.SuperUititle.active = false;
+            spine.setAnimation(0, "win_vfx_megawin", false);
+            this.light.getComponent(sp.Skeleton).setAnimation(0, "animation1", false);
+            // this.title.getComponent(Label).string = Language.getWord("l_greatRewards");
         } else {
-            spine.setAnimation(0, "win_super_in2", false);
-            this.title.getComponent(Label).string = Language.getWord("l_superRewards");
+            this.WinUititle.active = false;
+            this.MegaUititle.active = false;
+            this.SuperUititle.active = true;
+            spine.setAnimation(0, "win_vfx_supermegawin", false);
+            this.light.getComponent(sp.Skeleton).setAnimation(0, "animation2", false);
+            // this.title.getComponent(Label).string = Language.getWord("l_superRewards");
         }
 
-        this.light.active = true;
-        this.light.getComponent(sp.Skeleton).setAnimation(0, "animation", false);
-        this.fireworks.active = true;
+        // goldanimation 动画播放完后自动关闭
+        if (this.goldanimation) {
+            let goldSpine = this.goldanimation.getComponent(sp.Skeleton);
+            goldSpine.setToSetupPose();
+            goldSpine.setCompleteListener(() => {
+                this.goldanimation.active = false;
+                goldSpine.setCompleteListener(null);
+            });
+            goldSpine.setAnimation(0, "animation", false);
+        }
+
+        //
+        switch (Language.currency) {
+            case CurrencyType.US:
+                this.WinUititle.getComponent(SpriteSwitcher).index(0);
+                this.MegaUititle.getComponent(SpriteSwitcher).index(0);
+                this.SuperUititle.getComponent(SpriteSwitcher).index(0);
+                break;
+            case CurrencyType.BR:
+                this.WinUititle.getComponent(SpriteSwitcher).index(1);
+                this.MegaUititle.getComponent(SpriteSwitcher).index(1);
+                this.SuperUititle.getComponent(SpriteSwitcher).index(1);
+                break;
+            case CurrencyType.ID:
+                this.WinUititle.getComponent(SpriteSwitcher).index(2);
+                this.MegaUititle.getComponent(SpriteSwitcher).index(2);
+                this.SuperUititle.getComponent(SpriteSwitcher).index(2);
+                break;
+        }
+
+        // this.light.active = true;
+        // this.light.getComponent(sp.Skeleton).setAnimation(0, "animation", false);
+        this.fireworks.active = false;
 
         tween<NormalRewardPanel>(this)
             .to(0.8, { reward: rewardA })

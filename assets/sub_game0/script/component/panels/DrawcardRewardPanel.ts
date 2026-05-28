@@ -33,7 +33,7 @@ export class DrawcardRewardPanel extends Component implements IPanel {
     @property(Node)
     private closeBtn: Node = null;
     @property(Node)
-    private light: Node = null;
+    private lightTxt: Node = null;
     @property(Node)
     private claimBtn: Node = null;
     private lock: boolean = false;
@@ -59,7 +59,7 @@ export class DrawcardRewardPanel extends Component implements IPanel {
         this.reward = rewardA;
 
         this.fireworks.active = false;
-
+        this.lightTxt.setScale(2.3, 2.3, 1);
         this.reward = rewardA;
         tween<DrawcardRewardPanel>(this)
             .to(0.8, { reward: rewardA })
