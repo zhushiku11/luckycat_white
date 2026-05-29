@@ -59,6 +59,7 @@ export class TreasureWinPanel extends Component implements IPanel {
 
         this.tips.scales = 0;
         this.animation.alpha = 0;
+        // this.TotalTitleSp.alpha = 0;
         // let bgSp = this.light.getComponent(sp.Skeleton);
         // bgSp.setAnimation(0, "end_in", false);
         // let spS = this.animation.getComponent(sp.Skeleton);
@@ -78,9 +79,10 @@ export class TreasureWinPanel extends Component implements IPanel {
                 break;
         }
 
-        
+
         tween(this.animation).to(0.5, { alpha: 255 }).call(() => {
             tween(this.tips).to(0.2, { scales: 1 }).start();
+            // tween(this.TotalTitleSp).to(0.2, { alpha: 255 }).start();
             tween<TreasureWinPanel>(this)
                 .to(0.8, { amount: win })
                 .call(() => {
