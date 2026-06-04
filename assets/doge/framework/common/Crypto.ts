@@ -6,7 +6,7 @@ const KEY = CryptoES.enc.Utf8.parse("WANKEYUN");
 // 十六位十六进制数作为密钥偏移量
 const SECRET_IV = CryptoES.enc.Utf8.parse("");
 // XXTea密钥
-const XXTEA_KEY = "Jackpot@261";
+const XXTEA_KEY = "CatSpin@520Lyk";
 
 export default class Crypto {
 

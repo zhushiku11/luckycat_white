@@ -71,7 +71,7 @@ export const MAIN = {
     }
 }
 
-export const PACKAGE_NAME = "com.aqwad.jackpot";
+export const PACKAGE_NAME = "com.luckycatspin.mania.game";
 
 const AUDIO_PATH_PRE: string = 'sound/';
 export const AUDIOS = {
